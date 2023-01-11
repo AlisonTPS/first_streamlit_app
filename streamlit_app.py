@@ -1,2 +1,3 @@
 import streamlit
-streamlit.title('this is a title')
+streamlit.title('My Parents new Healthy Diner')
+streamlit. text('omega 3') 
