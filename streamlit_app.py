@@ -1,2 +1,2 @@
-This is garbage
-when will I key in something that makes sense
+import streamlit
+streamlit.title('this is a title')
