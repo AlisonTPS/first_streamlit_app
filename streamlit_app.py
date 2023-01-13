@@ -79,6 +79,10 @@ def insert_row_snowflake(new_fruit):
     with mycnx.cursor() as my_cur:
          mycur.execute("insert into myfruit_load_list values ('abc')")
          return "Thanks for adding " + new_fruit   
-
+if streamlit.button('Add Fruit'):
+    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+    my_data_rows = insert_row_snowflake()
+    my_cnx.close()
+    streamlit.dataframe(my_data_rows)
 # my_cur = my_cnx.cursor()
 # my_cur.execute("insert into fruit_load_list values ('from abc')")
