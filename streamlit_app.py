@@ -81,4 +81,4 @@ def insert_row_snowflake(new_fruit):
          return "Thanks for adding " + new_fruit   
 
 # my_cur = my_cnx.cursor()
-my_cur.execute("insert into fruit_load_list values ('from abc')")
+# my_cur.execute("insert into fruit_load_list values ('from abc')")
